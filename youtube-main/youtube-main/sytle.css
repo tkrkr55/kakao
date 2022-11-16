@@ -1,0 +1,231 @@
+:root{
+  /* Color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+
+/* 사이즈 */
+  --side-padding: 12px;
+  --avatar-size: 26px;
+/* 폰트 사이즈 */
+  --font-large:18px;
+  --font-medium:14px;
+  --font-small:12px;
+  --font-micro: 10px
+}
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+button:focus{
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: var(--side-padding);
+  background-color: var(--black-color);
+  color: var(--white-color)
+}
+
+header .logo{
+  font-size: var(--font-large);
+}
+
+header .logo i {
+  color: var(--red-color);
+}
+
+header .icon .fa-solid {
+  padding-right: 10px;
+}
+
+
+
+
+/* 비디오 플레이어 반응형 만들기 */
+.player{
+  position: static;
+  top:0;
+  text-align: center;
+  background-color: black;
+}
+
+.player video{
+  width:100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+body > .info{
+  padding: var(--side-padding);
+}
+
+.hashtags{
+  display: flex;
+  font-size: var(--font-small);
+  color: var(--blue-color);
+  
+}
+
+.hashtags li {
+  margin-right: 10px;
+}
+
+.info .metadate .titleAndButton{
+  display: flex;
+}
+
+.info .metadate .titleAndButton .title{
+  font-size: var(--font-medium);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+  overflow: hidden;
+  margin-right: var(--side-padding);
+}
+
+.info .metadate .titleAndButton .moreBtn{
+  height: 100%;
+}
+
+.info .views {
+  font-size: var(--font-small);
+  color:var(--grey-dark-color);
+}
+
+.action{
+  display: flex;
+  justify-content: space-around;
+  margin: var(--side-padding)0;
+  
+}
+
+.action button{
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+  background-color: transparent;
+  
+}
+
+.action button i {
+  margin: 0 auto;
+  margin-bottom: calc(var(--side-padding)/2);
+  font-size: 16px;
+  color: darkgray;
+
+}
+
+.action button i.active{
+  color: var(--blue-color);
+}
+/* 채널 디자인 */
+
+.channel {
+  display: flex;
+  justify-content: space-between;
+  border-top:1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+  padding:  var(--side-padding);
+}
+.channel .metadate{
+  display: flex;
+  align-items: center;
+}
+
+.channel .metadate .info{
+  display: flex;
+  flex-direction: column;
+}
+
+.channel .metadate img{
+  width:var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  
+}
+
+.channel .info {
+  margin-left: 10px;
+}
+
+.channel .metadate .info .subscribers{
+  font-size: var(--font-small);
+  color:var(--grey-dark-color);
+}
+
+.channel .subscribe{
+  text-transform: uppercase;
+  color:var(--red-color);
+  font-size: var(--font-medium);
+  background-color: transparent;
+}
+
+.UpNext {
+  padding: 0 var(--side-padding);
+}
+
+.UpNext > .title{
+  font-size: var(--font-medium);
+  color:var(--grey-dark-color);
+  margin-bottom: calc(var(--side-padding)/2);
+}
+
+.UpNext .item{
+  display: flex;
+  margin-top: var(--side-padding);
+}
+.UpNext .item .img img{
+  width:100%;
+}
+
+.UpNext .item .img {
+ flex: 1 1 35%;
+ margin-right: var(--side-padding);
+}
+
+
+.UpNext .item .info{
+ flex: 1 1 60%;
+}
+
+.UpNext .item .moreBtn{
+ flex : 1 1 5%
+}
+
+.UpNext .item .info{
+  display: flex;
+  flex-direction: column;
+}
+
+.infoAndUpNext{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px){
+  .infoAndUpNext{
+    flex-direction:  row;
+    margin:var(--side-padding)0;
+  }
+}

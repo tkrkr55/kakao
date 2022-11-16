@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sytle.css">
+  <script src="https://kit.fontawesome.com/4c50fac56e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- 비디오 헤더  -->
+    <header>
+      <div class="logo">
+        <i class="fa-brands fa-youtube"></i>
+        <span class="title">Youtube</span>
+      </div>
+      <div class="icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <!-- 비디오 플레이어 -->
+    <section class="player">
+      <video  controls autoplay src="비디오/video.mp4"></video>
+    </section>
+   <div class="infoAndUpNext">
+
+     <!-- 비디어 인포 -->
+     <section class="info">
+      <!-- 메타데이타 -->
+     <div class="matadata">
+       <ul class="hashtags">
+         <li>#Front End</li>
+         <li>#JavaScript</li>
+         <li>#css</li>
+         <li>#React</li>
+       </ul>
+       <div class="titleAndButton">
+         <span class="title">
+           Clone Coding : Youtube Mobile Website 유튜브 모바일 클론 코딩 만들어보기 HTML, CSS, Javascript
+         </span>
+        
+       </div>
+
+       <span class="views">
+         <span class="views">1M views 1 month</span>
+       </span>
+     </div>
+     <!-- 액션 아이콘 -->
+     <ul class="action">
+       <li><button><i class="active fa-regular fa-thumbs-up"></i><span>1k</span></button></li>
+       <li><button><i class="fa-regular fa-thumbs-down"></i><span>0</span></button></li>
+       <li><button><i class="fa-solid fa-share"></i><span>Share</span></button></li>
+       <li><button><i class="fa-regular fa-plus"></i><span>Save</span></button></li>
+       <li><button><i class="fa-solid fa-flag"></i><span>Report</span></button></li>
+     </ul>
+     <!-- 채널명과 이름 -->
+     <div class="channel">
+       <div class="metadate">
+       <div class="img"> <img src="이미지/me2.jpg" alt=""></div> 
+        <div class="info">
+         <sapn class="name">hyeru coding</sapn>
+         <span class="subscribers">1M subcribers</span>
+        </div>
+       </div>
+       <Button class="subscribe">subscribe</Button>
+   
+     </div>
+   </section>
+
+ <!-- 유튜브채널보여지는곳  -->
+   <section class="UpNext">
+     <span class="title">Up next</span>
+     <ul>
+       <li class="item">
+      <div class="img"> <img src="이미지/썸네일1.jpeg" alt=""></div>
+         <div class="info">
+           <span class="title">프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발 입문자편 강의를 시작합니다.</span>
+           <span class="name">드림코딩 by 엘리</span>
+           <span class="views">82K views</span>
+         </div>
+         <button class="moreBtn"><i class="fa-solid fa-bars"> </i></button>
+       </li>
+       
+       <li class="item">
+         <div class="img"> <img src="이미지/개발자2.jpg" alt=""></div>
+         <div class="info">
+           <span class="title">HTML 기초, React 할때 꼭 필요한 팁! 쉽다고 무시하면 안돼요 </span>
+           <span class="name">애플코딩</span>
+           <span class="views">84K views</span>
+         </div>
+         <button class="moreBtn"><i class="fa-solid fa-bars"> </i></button>
+       </li>
+       <li class="item">
+      <div class="img"><img src="이미지/썸네일2.jpeg" alt=""></div> 
+         <div class="info">
+           <span class="title">HTML 태그 완성, 웹 포토폴리오 만들기 전에 꼭 보세요</span>
+           <span class="name"> 생활코딩</span>
+           <span class="views">82K views</span>
+         </div>
+         <button class="moreBtn"><i class="fa-solid fa-bars"> </i></button></li>
+       </li>
+       </ul>
+   </section>
+
+   </div>
+
+  
+</body>
+</html>
